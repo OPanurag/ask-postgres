@@ -1,12 +1,19 @@
 from fastapi import FastAPI, HTTPException
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
+from dotenv import load_dotenv
 import os
 
 app = FastAPI()
 
-# Database URL
+# Load environment variables
+load_dotenv()
+
+# Get DB URL
 DATABASE_URL = os.getenv("DATABASE_URL")
+
+if not DATABASE_URL:
+    raise ValueError("❌ DATABASE_URL not found. Check your .env file!")
 
 # SQLAlchemy setup
 engine = create_engine(DATABASE_URL)

@@ -61,6 +61,62 @@ Ensure the following are installed on your system:
 
 2. Open the application in your browser at `http://localhost:8501`.
 
+## ▶️ Starting the Backend and Frontend
+
+### Backend
+1. Navigate to the project root directory:
+   ```bash
+   cd /Users/anurag/VS Code/vocso/ask-postgres
+   ```
+
+2. Start the backend by running the Streamlit application:
+   ```bash
+   streamlit run app.py
+   ```
+
+3. The backend will be accessible at `http://localhost:8501`.
+
+### Frontend
+1. Navigate to the `frontend` directory:
+   ```bash
+   cd /Users/anurag/VS Code/vocso/ask-postgres/frontend
+   ```
+
+2. Start the frontend:
+   ```bash
+   streamlit run app.py
+   ```
+
+3. The frontend will be accessible at `http://localhost:8501`.
+
+## 💡 Sample Queries
+Here are some example queries you can try in the application:
+
+1. **Retrieve all employees in the Engineering department:**
+   ```
+   Show me all employees in the Engineering department.
+   ```
+
+2. **Find the total sales made by Rohan Gupta:**
+   ```
+   What is the total sales amount handled by Rohan Gupta?
+   ```
+
+3. **List all products priced above $500:**
+   ```
+   Show me all products that cost more than $500.
+   ```
+
+4. **Get the details of orders placed in August 2025:**
+   ```
+   List all orders made in August 2025.
+   ```
+
+5. **Find the highest-paid employee:**
+   ```
+   Who is the highest-paid employee?
+   ```
+
 ## 🧪 Testing
 Run the test scripts to ensure everything is working correctly:
 ```bash
@@ -71,7 +127,7 @@ python gemini_test.py
 ## 📂 Project Structure
 ```
 ask-postgres/
-├── app.py               # Streamlit application
+├── app.py               # Streamlit application (Backend)
 ├── db_test.py           # Database test script
 ├── gemini_test.py       # Gemini API test script
 ├── docker-compose.yml   # Docker configuration
@@ -82,6 +138,9 @@ ask-postgres/
 ├── src/                 # Source code
 │   ├── db.py            # Database utility functions
 │   ├── llm.py           # Language model integration
+├── frontend/            # Frontend application
+│   ├── app.py           # Streamlit application (Frontend)
+├── venv/                # Virtual environment
 └── README.md            # Project documentation
 ```
 
