@@ -34,7 +34,7 @@ def seed():
                 ).scalar()
             dept_ids[dept] = dept_id
 
-        # --- Employees with Chinese-style names ---
+        # --- Employees names ---
         employees = [
             ("Li Wei", "Engineering", 95000),
             ("Wang Fang", "HR", 60000),
