@@ -1,9 +1,6 @@
+fastapi==0.116.1
+protobuf==6.32.0
 python-dotenv==1.1.1
 SQLAlchemy==2.0.31
 streamlit==1.36.0
 tenacity==8.5.0
-psycopg2-binary>=2.9
-pgvector>=0.2.5
-google-generativeai>=0.7
-pydantic>=2.7
-protobuf<6
