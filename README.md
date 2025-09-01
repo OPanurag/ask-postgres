@@ -48,7 +48,7 @@ Ensure the following are installed on your system:
 ## 🔑 Configuration
 1. Copy the example environment file:
    ```bash
-   cp .env.example .env
+   cp .env
    ```
 
 2. Add your Gemini API key to the `.env` file.

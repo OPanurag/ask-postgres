@@ -16,6 +16,6 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Test prompt
-response = model.generate_content("Hello Gemini! Can you confirm you're alive?")
+response = model.generate_content("Hello Gemini! Can you confirm you're working properly?")
 
 print("Gemini says:", response.text)
